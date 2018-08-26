@@ -18,7 +18,7 @@ $option = array(
     //Second row 
     array($telegram->buildInlineKeyBoardButton("🔄 יד2 📦", $url="http://t.me/Weed4uIsraelTrading"), $telegram->buildInlineKeyBoardButton("🌍קהילה🌏", $url="http://t.me/Weed4uIsrael"), $telegram->buildInlineKeyBoardButton("מה נשאר?", $url="http://yimutim.com")), 
     //Third row
-    array($telegram->buildInlineKeyBoardButton("📊 לערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews"), $telegram->buildInlineKeyBoardButton("🌍קהילה🌏", message="TEST")) );
+    array($telegram->buildInlineKeyBoardButton("📊 לערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews"), $telegram->buildInlineKeyBoardButton("🌍קהילה🌏", $callback_data="TEST")) );
 $keyb = $telegram->buildInlineKeyBoard($option);
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "ברוכיםם הבאים לדיניה עולםםםם");
 $telegram->sendMessage($content);
