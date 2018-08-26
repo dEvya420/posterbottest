@@ -14,13 +14,18 @@ if ($text == '/start') {
 
 
 if ($text == 'dfgdfg') {
-    
-    // First response after receiving "/start" from userLang
+
+
     $content = array(
-        'chat_id' => 654501309,
-        'text' => "    $text"
+
+        'chat_id' => "654501309" ,
+
+        'text' => "$text"
+
     );
+
     $telegram->sendMessage($content);
+
 }
 
 $option = array( 
