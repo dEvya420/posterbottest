@@ -23,7 +23,7 @@ $keyb = $telegram->buildInlineKeyBoard($option);
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "ברוכיםם הבאים לדיניה עולםםםם");
 $telegram->sendMessage($content);
 
-
+ 
 ?>
 
 
