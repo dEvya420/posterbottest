@@ -12,6 +12,17 @@ if ($text == '/start') {
     $telegram->sendMessage($content);
 }
 
+
+if ($text == 'dfgdfg') {
+    
+    // First response after receiving "/start" from userLang
+    $content = array(
+        'chat_id' => $chat_id,
+        'text' => "    $text"
+    );
+    $telegram->sendMessage($content);
+}
+
 $option = array( 
     //First row
     array($telegram->buildInlineKeyBoardButton("💊 ערוץ הפסיכודלי 🔮", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("↩️ ערוץ הכיוונים ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")), 
