@@ -20,7 +20,7 @@ $option = array(
     //Third row
     array($telegram->buildInlineKeyBoardButton("📊 לערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews")),
     //Forth
-    array($telegram->buildInlineKeyBoardButton("📊 לערוקורת 📋", sendMessage?chat_id=$chat_id&text="Hi"), $telegram->buildInlineKeyBoardButton("יקורת 📋", sendmessage?chat_id=".$chat_id."&text=test")) );
+    array($telegram->buildInlineKeyBoardButton("📊 לערוקורת 📋", $text="Hi")) );
 $keyb = $telegram->buildInlineKeyBoard($option);
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "ברוכיםם הבאים לדיניה עולםםםם");
 $telegram->sendMessage($content);
