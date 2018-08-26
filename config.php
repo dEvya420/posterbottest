@@ -2,7 +2,7 @@
 
 
 
-    $bot_token = "67247XXXXXXXXXXXXXXXXXXXUz3jE";
+    $bot_token = "658690075:AAFQNAqF3MnR-YzLK7wx3xMFxQYwgqNhEmI";
 
 	
 	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
