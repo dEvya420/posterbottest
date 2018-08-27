@@ -2,7 +2,7 @@
 
 
 
-    $bot_token = "658690075:AAFQNAqF3MnR-YzLK7wx3xMFxQYwgqNhEmI";
+    $bot_token = "658XXXXXXX3MnR-YzLK7wx3xMFxQYwgqNhEmI";
 
 	// Using the TelegramBotPHP library by Eleirbag89 - https://github.com/Eleirbag89/TelegramBotPHP
 
