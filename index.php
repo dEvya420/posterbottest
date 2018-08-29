@@ -7,8 +7,8 @@ if ($text == '/start') {
     // First response after receiving "/start" from userLang
     $content = array(
         'chat_id' => $chat_id,
-        'text' => "    אהלן וסהלןןן"
-    );
+        'text' => "    אהלן אני הבוט של Weed4U :) "./n" אני יעזור לכם להגיע לאן שתרצו "./n" 🌍 קהילות, ערוצים, פניות 🌍 "/.n" 📊 והגשת ביקורות 📋"
+        );
     $telegram->sendMessage($content);
 }
 
