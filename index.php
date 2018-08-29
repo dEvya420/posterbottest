@@ -1,5 +1,5 @@
 <?php
-
+ 
 require('config.php');
 
 if ($text == '/start') {
