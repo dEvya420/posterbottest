@@ -38,7 +38,7 @@ $option = array(
     array($telegram->buildInlineKeyBoardButton("🔄 יד2 📦", $url="http://t.me/Weed4uIsraelTrading"), $telegram->buildInlineKeyBoardButton("📊 ערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews"), $telegram->buildInlineKeyBoardButton("📝 הגשת ביקורת ✏️", $url="כרגע.בבניה")), 
     //Third row
     array($telegram->buildInlineKeyBoardButton("💰 רוצה לפרסם אצלינו ? 📣", $callback_data="parsess")) );
-	array($telegram->answerCallbackQuery(array (callback_query_id="parsess"), "asdasd"));
+	array($telegram->answerCallbackQuery(array callback_query_id="parsess", "asdasd"));
 $keyb = $telegram->buildInlineKeyBoard($option);
 
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "אהלן אני הבוט של Weed4U :)");
