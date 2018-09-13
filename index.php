@@ -39,7 +39,7 @@ $option = array(
     //Third row
     array($telegram->buildInlineKeyBoardButton("'Callback 1', $url = '', $callback_data = '1')) );
 $keyb = $telegram->buildInlineKeyBoard($option);
-$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "אהלן אני הבוט של Weed4U");
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text'="אהלן אני הבוט של Weed4U");
 $telegram->sendMessage($content);
 }
 $callback_query = $telegram->Callback_Query();
