@@ -7,7 +7,7 @@ if ($text == '/start') {
     // First response after receiving "/start" from userLang
     $content = array(
         'chat_id' => $chat_id,
-        'text' => "    אהלן אני הבוט של Weed4U :)"
+        'text' => "    "
         );
     $telegram->sendMessage($content);
 }
@@ -39,7 +39,7 @@ $option = array(
     //Third row
     array($telegram->buildInlineKeyBoardButton("💰 רוצה לפרסם אצלינו ? 📣", $url="https://t.me/Weed4uIsraelPartners")) );
 $keyb = $telegram->buildInlineKeyBoard($option);
-$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "ברוכיםם הבאים לדיניה עולםםםם");
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "אהלן אני הבוט של Weed4U :)");
 $telegram->sendMessage($content);
 
 
