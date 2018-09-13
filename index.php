@@ -28,6 +28,15 @@ if ($text == 'dfgdfg') {
 
 }
 
+$callback_query = $telegram->Callback_Query();
+if ($callback_query !== null && $callback_query != '') {
+    $reply = 'Callback value '.$telegram->Callback_Data();
+    $content = ['chat_id' => $telegram->Callback_ChatID(), 'text' => $reply];
+    $telegram->sendMessage($content);
+    $content = ['callback_query_id' => $telegram->Callback_ID(), 'text' => $reply, 'show_alert' => true];
+    $telegram->answerCallbackQuery($content);
+}
+
 $option = array( 
     array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael")),
 	//
@@ -42,12 +51,4 @@ $keyb = $telegram->buildInlineKeyBoard($option);
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb);
 $telegram->sendMessage($content);
 
-$callback_query = $telegram->Callback_Query();
-if ($callback_query !== null && $callback_query != '') {
-    $reply = 'Callback value '.$telegram->Callback_Data();
-    $content = ['chat_id' => $telegram->Callback_ChatID(), 'text' => $reply];
-    $telegram->sendMessage($content);
-    $content = ['callback_query_id' => $telegram->Callback_ID(), 'text' => $reply, 'show_alert' => true];
-    $telegram->answerCallbackQuery($content);
-}
 ?>
