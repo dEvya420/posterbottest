@@ -41,8 +41,8 @@ $option = array(
 $keyb = $telegram->buildInlineKeyBoard($option);
 
 {
-    $telegram->answerCallbackQuery($content);
-    $content = array('callback_query_id' => parsess, 'url' => 'http://domain.com/gamefolder/?user_id='.$user_id.'&inline='.$inline_id);
+    $telegram->answerCallbackQuery(array $content);
+    $content = array('callback_query_id' => 'parsess', 'url' => 'http://domain.com/gamefolder/?user_id='.$user_id.'&inline='.$inline_id);
 	
 		     }	
 
