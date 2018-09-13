@@ -13,17 +13,9 @@ if ($text == '/start') {
 }
 
 if ($text == "פסיכו") {
-$option = array( 
-    array($telegram->buildInlineKeyBoardButton("🌍 קהאשית 🌏", $url="http://t.me/Weed4uIsrael")),
-	//
-    array($telegram->buildInlineKeyBoardButton("↩️ ערוץ הים הראשי ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")),
-    //
-    array($telegram->buildInlineKeyBoardButton("💊 כיווניודלי 💊", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("🔮 קהילה פסיכודליה 🔮", $url="https://t.me/Weed4uIsraelPsyCom")), 
-    //Second row 
-    array($telegram->buildInlineKeyBoardButton("🔄 יד2 📦", $url="http://t.me/Weed4uIsraelTrading"), $telegram->buildInlineKeyBoardButton("📊 ערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews"), $telegram->buildInlineKeyBoardButton("📝 הגשת ביקורת ✏️", $url="כרגע.בבניה")), 
-    //Third row
-    array($telegram->buildInlineKeyBoardButton("Callback 1", $url = "", $callback_data = "פסיכו")) );
-$keyb = $telegram->buildInlineKeyBoard($option);
+	array( 
+		array($telegram->buildInlineKeyBoardButton("🌍 קהאשית 🌏", $url="http://t.me/Weed4uIsrael")),
+		array($telegram->buildInlineKeyBoardButton("↩️ ערוץ הים הראשי ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")) );
 }
 
 $callback_query = $telegram->Callback_Query();
@@ -46,7 +38,7 @@ $option = array(
     //Third row
     array($telegram->buildInlineKeyBoardButton("Callback 1", $url = "", $callback_data = "פסיכו")) );
 $keyb = $telegram->buildInlineKeyBoard($option);
-$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "test");
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "Welcome to Weed4U Menu Bot :)");
 $telegram->sendMessage($content);
 
 ?>
