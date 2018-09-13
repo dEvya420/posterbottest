@@ -12,11 +12,18 @@ if ($text == '/start') {
     $telegram->sendMessage($content);
 }
 
-if($text == "פסיכו"){
-	$option = array( 
-		array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael")) );
-		$keyb = $telegram->buildInlineKeyBoard($option)
-
+if ($text == "פסיכו") {
+$option = array( 
+    array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael")),
+	//
+    array($telegram->buildInlineKeyBoardButton("↩️ ערוץ הכיוונים הראשי ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")),
+    //
+    array($telegram->buildInlineKeyBoardButton("💊 כיוונים פסיכודלי 💊", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("🔮 קהילה פסיכודליה 🔮", $url="https://t.me/Weed4uIsraelPsyCom")), 
+    //Second row 
+    array($telegram->buildInlineKeyBoardButton("🔄 יד2 📦", $url="http://t.me/Weed4uIsraelTrading"), $telegram->buildInlineKeyBoardButton("📊 ערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews"), $telegram->buildInlineKeyBoardButton("📝 הגשת ביקורת ✏️", $url="כרגע.בבניה")), 
+    //Third row
+    array($telegram->buildInlineKeyBoardButton("Callback 1", $url = "", $callback_data = "פסיכו")) );
+$keyb = $telegram->buildInlineKeyBoard($option);
 }
 
 $callback_query = $telegram->Callback_Query();
