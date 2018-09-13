@@ -16,8 +16,6 @@ if($text == "פסיכו"){
 	$option = array( 
 		array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael")) );
 		$keyb = $telegram->buildInlineKeyBoard($option)
-			}
-
 
 
 if ($text == 'dfgdfg') {
