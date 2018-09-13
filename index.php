@@ -30,7 +30,7 @@ if ($text == 'dfgdfg') {
 
 $callback_query = $telegram->Callback_Query();
 if ($callback_query !== null && $callback_query != '') {
-    $reply = 'Callback value '.$telegram->Callback_Data();
+    $reply = array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael"));
     $content = ['chat_id' => $telegram->Callback_ChatID(), 'text' => $reply];
     $telegram->sendMessage($content);
     $content = ['callback_query_id' => $telegram->Callback_ID(), 'text' => $reply, 'show_alert' => true];
