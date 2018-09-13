@@ -41,7 +41,7 @@ $option = array(
 $keyb = $telegram->buildInlineKeyBoard($option);
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb);
 $telegram->sendMessage($content);
-}
+
 $callback_query = $telegram->Callback_Query();
 if ($callback_query !== null && $callback_query != '') {
     $reply = 'Callback value '.$telegram->Callback_Data();
