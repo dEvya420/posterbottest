@@ -12,6 +12,13 @@ if ($text == '/start') {
     $telegram->sendMessage($content);
 }
 
+if($text == "פסיכו"){
+	$but[] = array(array("text" => "🎭קהילה פסיכודלי🎭", "url" => "https://t.me/psychedelicisra"),);
+	$but[] = array(array("text" => "כיוונים פסיכודלייה ערוץ!", "url" => "https://t.me/psyh69"),);
+	inline_keyboard($but, $cid, "כיווני פסיכו");
+}
+
+
 
 if ($text == 'dfgdfg') {
 
