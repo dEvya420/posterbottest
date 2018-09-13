@@ -40,12 +40,12 @@ $option = array(
     array($telegram->buildInlineKeyBoardButton("💰 רוצה לפרסם אצלינו ? 📣", $callback_data="parsess")) );
 $keyb = $telegram->buildInlineKeyBoard($option);
 
-
+{
 switch($replyMarkup){
     case 'parsess':
     sendMessage($chat_id, "plz");
     break;
-
+}
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "אהלן אני הבוט של Weed4U :)");
 $telegram->sendMessage($content);
 
