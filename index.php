@@ -48,7 +48,7 @@ $option = array(
     //Third row
     array($telegram->buildInlineKeyBoardButton("'Callback 1', $url = '', $callback_data = '1')) );
 $keyb = $telegram->buildInlineKeyBoard($option);
-$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb);
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "אהלן");
 $telegram->sendMessage($content);
-
+}
 ?>
