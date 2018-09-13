@@ -29,6 +29,7 @@ if ($text == 'dfgdfg') {
 }
 
 $option = array( 
+    array($telegram->buildInlineKeyBoardButton("📊 לערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews")) );
     //First row
     array($telegram->buildInlineKeyBoardButton("💊 ערוץ הפסיכודלי 🔮", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("↩️ ערוץ הכיוונים ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")), 
     //Second row 
