@@ -17,20 +17,6 @@ if($text == "פסיכו"){
 		array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael")) );
 		$keyb = $telegram->buildInlineKeyBoard($option)
 
-
-if ($text == 'dfgdfg') {
-
-
-    $content = array(
-
-        'chat_id' => "654501309" ,
-
-        'text' => "$text"
-
-    );
-
-    $telegram->sendMessage($content);
-
 }
 
 $callback_query = $telegram->Callback_Query();
