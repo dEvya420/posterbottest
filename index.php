@@ -29,9 +29,11 @@ if ($text == 'dfgdfg') {
 }
 
 $option = array( 
-    array($telegram->buildInlineKeyBoardButton("📊 לערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews")),
-    //First row
-    array($telegram->buildInlineKeyBoardButton("💊 ערוץ הפסיכודלי 🔮", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("↩️ ערוץ הכיוונים ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")), 
+    array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael")),
+	//
+    array($telegram->buildInlineKeyBoardButton("↩️ ערוץ הכיוונים הראשי ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")),
+    //
+    array($telegram->buildInlineKeyBoardButton("💊 כיוונים פסיכודלי 💊", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("🔮 קהילה פסיכודליה 🔮", $url="https://t.me/Weed4uIsraelPsyCom")), 
     //Second row 
     array($telegram->buildInlineKeyBoardButton("🔄 יד2 📦", $url="http://t.me/Weed4uIsraelTrading"), $telegram->buildInlineKeyBoardButton("🌍קהילה🌏", $url="http://t.me/Weed4uIsrael"), $telegram->buildInlineKeyBoardButton("מה נשאר?", $url="http://yimutim.com")), 
     //Third row
