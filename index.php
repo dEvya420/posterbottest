@@ -14,11 +14,11 @@ if ($text == '/start') {
 
 if ($text == "פסיכו") {
 $option = array( 
-    array($telegram->buildInlineKeyBoardButton("🌍 קהילה ראשית 🌏", $url="http://t.me/Weed4uIsrael")),
+    array($telegram->buildInlineKeyBoardButton("🌍 קהאשית 🌏", $url="http://t.me/Weed4uIsrael")),
 	//
-    array($telegram->buildInlineKeyBoardButton("↩️ ערוץ הכיוונים הראשי ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")),
+    array($telegram->buildInlineKeyBoardButton("↩️ ערוץ הים הראשי ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")),
     //
-    array($telegram->buildInlineKeyBoardButton("💊 כיוונים פסיכודלי 💊", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("🔮 קהילה פסיכודליה 🔮", $url="https://t.me/Weed4uIsraelPsyCom")), 
+    array($telegram->buildInlineKeyBoardButton("💊 כיווניודלי 💊", $url="http://t.me/Weed4uIsraelMainPsy"), $telegram->buildInlineKeyBoardButton("🔮 קהילה פסיכודליה 🔮", $url="https://t.me/Weed4uIsraelPsyCom")), 
     //Second row 
     array($telegram->buildInlineKeyBoardButton("🔄 יד2 📦", $url="http://t.me/Weed4uIsraelTrading"), $telegram->buildInlineKeyBoardButton("📊 ערוץ הביקורת 📋", $url="http://t.me/Weed4uIsraelReviews"), $telegram->buildInlineKeyBoardButton("📝 הגשת ביקורת ✏️", $url="כרגע.בבניה")), 
     //Third row
