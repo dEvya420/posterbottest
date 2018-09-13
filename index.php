@@ -20,11 +20,11 @@ if ($text == "פסיכו") {
 
 $callback_query = $telegram->Callback_Query();
 if ($callback_query !== null && $callback_query != '') {
-    $reply = {
+    $reply = [
 	    array( 
 		array($telegram->buildInlineKeyBoardButton("🌍 קהאשית 🌏", $url="http://t.me/Weed4uIsrael")),
 		array($telegram->buildInlineKeyBoardButton("↩️ ערוץ הים הראשי ↪️", $url="http://t.me/Weed4uIsraelMainPlugs")) );
-    }
+    ]
     $content = ['chat_id' => $telegram->Callback_ChatID(), 'text' => $reply];
     $telegram->sendMessage($content);
     $content = ['callback_query_id' => $telegram->Callback_ID(), 'text' => $reply, 'show_alert' => false];
