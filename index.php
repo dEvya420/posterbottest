@@ -42,9 +42,9 @@ $keyb = $telegram->buildInlineKeyBoard($option);
 
 {
     $telegram->answerCallbackQuery($content);
-    $content = ['callback_query_id' => parsess, 'url' => 'http://domain.com/gamefolder/?user_id='.$user_id.'&inline='.$inline_id];
+    $content = array('callback_query_id' => parsess, 'url' => 'http://domain.com/gamefolder/?user_id='.$user_id.'&inline='.$inline_id);
 	
-	
+		     }	
 
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "אהלן אני הבוט של Weed4U :)");
 $telegram->sendMessage($content);
