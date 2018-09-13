@@ -40,11 +40,14 @@ $option = array(
     array($telegram->buildInlineKeyBoardButton("💰 רוצה לפרסם אצלינו ? 📣", $callback_data="parsess")) );
 $keyb = $telegram->buildInlineKeyBoard($option);
 
-{
-    $telegram->answerCallbackQuery(array $content);
-    $content = array('callback_query_id' => 'parsess', 'url' => 'http://domain.com/gamefolder/?user_id='.$user_id.'&inline='.$inline_id);
-	
-		     }	
+$callback_query = $telegram->Callback_Query();
+if ($callback_query !== null && $callback_query != '') {
+    $reply = 'Callback value '.$telegram->Callback_Data();
+    $content = ['chat_id' => $telegram->Callback_ChatID(), 'text' => $reply];
+    $telegram->sendMessage($content);
+    $content = ['callback_query_id' => $telegram->Callback_ID(), 'text' => $reply, 'show_alert' => true];
+    $telegram->answerCallbackQuery($content);
+}
 
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "אהלן אני הבוט של Weed4U :)");
 $telegram->sendMessage($content);
